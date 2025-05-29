@@ -9,7 +9,7 @@ def get_connection():
  return mysql.connector.connect(
     host='localhost',
     user='root',
-    password='samid123',
+    password='yoga',
     database='HotelDB'
 )
 
@@ -82,7 +82,7 @@ def afficher_chambres_disponibles(date_debut, date_fin):
         conn = get_connection()
         cursor = conn.cursor()
         query = """
-            SELECT Ch.id_chambre, Ch.numero, Ch.etage, H.ville, T.nom AS nom_type
+            SELECT Ch.id_chambre, Ch.numero, Ch.etage, H.ville, T.nom_type AS nom_type_chambre
             FROM Chambre Ch
             JOIN Hotel H ON Ch.id_hotel = H.id_hotel
             JOIN TypeChambre T ON Ch.id_type = T.id_type
