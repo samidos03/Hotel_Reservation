@@ -1,3 +1,4 @@
+DROP DATABASE IF EXISTS HotelDB; -- Add this line to start fresh
 CREATE DATABASE IF NOT EXISTS HotelDB;
 USE HotelDB;
 
@@ -99,15 +100,15 @@ INSERT INTO Reservation VALUES
 (1, '2025-06-15', '2025-06-18', 1),
 (2, '2025-07-01', '2025-07-05', 2),
 (7, '2025-11-12', '2025-11-14', 2),
-(10, '2026-02-01', '2026-02-05', 2), 
+(8, '2026-02-01', '2026-02-05', 2), 
 (3, '2025-08-10', '2025-08-14', 3),
 (4, '2025-09-05', '2025-09-07', 4),
-(9, '2026-01-15', '2026-01-18', 4), 
+(6, '2026-01-15', '2026-01-18', 4), 
 (5, '2025-09-20', '2025-09-25', 5);
 
 INSERT INTO Evaluation VALUES
-(1, '2025-06-15', 5, 'Excellent séjour, personnel très accueillant.', 1),
-(2, '2025-07-01', 4, 'Chambre propre, bon rapport qualité/prix.', 2),
-(3, '2025-08-10', 3, 'Séjour correct mais bruyant la nuit.', 3),
-(4, '2025-09-05', 5, 'Service impeccable, je recommande.', 4),
-(5, '2025-09-20', 4, 'Très bon séjour.', 5);
+(1, '2025-06-15', 5, 'Excellent séjour, personnel très accueillant.', 1), 
+(2, '2025-07-01', 4, 'Chambre propre, bon rapport qualité/prix.', 1),    
+(3, '2025-08-10', 3, 'Séjour correct mais bruyant la nuit.', 2),     
+(4, '2025-09-05', 5, 'Service impeccable, je recommande.', 2),      
+(5, '2025-09-20', 4, 'Très bon séjour.', 2);                         
